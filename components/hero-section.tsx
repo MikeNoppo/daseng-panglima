@@ -10,7 +10,7 @@ export function HeroSection() {
   }, [])
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-primary/10 via-background to-background">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-linear-to-b from-primary/10 via-background to-background">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden z-0 pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl animate-wave" />

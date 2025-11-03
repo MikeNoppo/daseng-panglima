@@ -34,7 +34,7 @@ export function TimelineSection() {
   ]
 
   return (
-    <section id="history" className="py-20 bg-gradient-to-b from-background to-primary/5">
+    <section id="history" className="py-20 bg-linear-to-b from-background to-primary/5">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -47,7 +47,7 @@ export function TimelineSection() {
         {/* Timeline Container */}
         <div className="relative">
           {/* Center line */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-primary via-accent to-primary/30" />
+          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-linear-to-b from-primary via-accent to-primary/30" />
 
           {/* Timeline Items */}
           <div className="space-y-12">
@@ -96,7 +96,7 @@ export function TimelineSection() {
         </div>
 
         {/* Legacy Statement */}
-        <div className="mt-20 bg-gradient-to-r from-primary/10 to-accent/10 rounded-lg p-8 md:p-12 border border-primary/20">
+        <div className="mt-20 bg-linear-to-r from-primary/10 to-accent/10 rounded-lg p-8 md:p-12 border border-primary/20">
           <h3 className="text-2xl font-bold text-foreground mb-4">Warisan yang Berkelanjutan</h3>
           <p className="text-muted-foreground leading-relaxed">
             Meskipun Daseng Panglima tidak lagi berdiri secara fisik, warisan dan dampaknya tetap hidup dalam hati dan

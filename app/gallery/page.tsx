@@ -28,7 +28,7 @@ export default function GalleryPage() {
             {galleryItems.map((item) => (
               <div
                 key={item.id}
-                className="group relative h-64 bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg overflow-hidden border border-border hover:border-primary/50 transition-all hover:shadow-lg cursor-pointer"
+                className="group relative h-64 bg-linear-to-br from-primary/20 to-accent/20 rounded-lg overflow-hidden border border-border hover:border-primary/50 transition-all hover:shadow-lg cursor-pointer"
               >
                 <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
                   <div className="text-5xl mb-4 group-hover:scale-110 transition-transform">📷</div>
