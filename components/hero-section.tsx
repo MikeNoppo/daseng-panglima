@@ -13,7 +13,7 @@ export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <Image
-        src="/hero-daseng-panglima.jpg"
+        src="/daseng-panglima-2004-bangunan-asli.jpg"
         alt="Daseng Panglima"
         fill
         className="object-cover"
