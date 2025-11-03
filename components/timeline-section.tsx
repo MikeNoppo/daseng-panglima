@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export function TimelineSection() {
   const timelineItems = [
     {
@@ -72,11 +74,12 @@ export function TimelineSection() {
 
                     {/* Image if provided */}
                     {item.image && (
-                      <div className="relative overflow-hidden rounded-lg">
-                        <img
-                          src={item.image || "/placeholder.svg"}
+                      <div className="relative overflow-hidden rounded-lg h-64">
+                        <Image
+                          src={item.image}
                           alt={item.title}
-                          className="w-full h-64 object-cover rounded-lg transition-transform duration-300 hover:scale-105"
+                          fill
+                          className="object-cover rounded-lg transition-transform duration-300 hover:scale-105"
                         />
                       </div>
                     )}
