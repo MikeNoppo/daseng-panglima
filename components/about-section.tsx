@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export function AboutSection() {
   return (
     <section id="about" className="py-20 bg-background">
@@ -17,13 +19,14 @@ export function AboutSection() {
             </p>
           </div>
 
-          <div className="relative h-96 bg-linear-to-br from-primary/20 to-accent/20 rounded-lg overflow-hidden">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center">
-                <div className="text-6xl mb-4">🌊</div>
-                <p className="text-muted-foreground">Galeri Foto Segera Hadir</p>
-              </div>
-            </div>
+          <div className="relative h-96 rounded-lg overflow-hidden">
+            <Image
+              src="/about.JPG"
+              alt="Daseng Panglima"
+              fill
+              className="object-cover"
+              priority
+            />
           </div>
         </div>
       </div>
