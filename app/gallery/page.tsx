@@ -1,14 +1,17 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
+import Image from "next/image"
 
 export default function GalleryPage() {
   const galleryItems = [
-    { id: 1, title: "Daseng Panglima - Masa Jaya", category: "Arsip" },
-    { id: 2, title: "Komunitas Nelayan Berkumpul", category: "Komunitas" },
-    { id: 3, title: "Aktivitas Sehari-hari", category: "Dokumentasi" },
-    { id: 4, title: "Perayaan Hasil Tangkapan", category: "Perayaan" },
-    { id: 5, title: "Generasi Muda Belajar", category: "Edukasi" },
-    { id: 6, title: "Momen Bersama Keluarga", category: "Komunitas" },
+    { id: 1, title: "Daseng Panglima - 2003", category: "Arsip", image: "/gallery/2003-daseng.jpg" },
+    { id: 2, title: "Daseng Panglima - 2020", category: "Arsip", image: "/gallery/2020-daseng.jpg" },
+    { id: 3, title: "Konsolidasi Nelayan Sulut", category: "Komunitas", image: "/gallery/31-Jul-2018-Gelar Konsolidasi, Nelayan Sulut Ungkapkan Berbagai Persoalan.jpg" },
+    { id: 4, title: "Daseng - Juni 2020", category: "Dokumentasi", image: "/gallery/Daseng-29-juni-2020.jpg" },
+    { id: 5, title: "Tampak Depan Daseng", category: "Dokumentasi", image: "/gallery/dasengFrontView.jpg" },
+    { id: 6, title: "Pemandangan dari Kapal", category: "Dokumentasi", image: "/gallery/dasenBoatView.png" },
+    { id: 7, title: "Frances and Sea", category: "Komunitas", image: "/gallery/fancesAndSea.jpg" },
+    { id: 8, title: "Pemandangan Laut", category: "Dokumentasi", image: "/gallery/SeaView.jpg" },
   ]
 
   return (
@@ -28,14 +31,19 @@ export default function GalleryPage() {
             {galleryItems.map((item) => (
               <div
                 key={item.id}
-                className="group relative h-64 bg-linear-to-br from-primary/20 to-accent/20 rounded-lg overflow-hidden border border-border hover:border-primary/50 transition-all hover:shadow-lg cursor-pointer"
+                className="group relative h-64 rounded-lg overflow-hidden border border-border hover:border-primary/50 transition-all hover:shadow-lg cursor-pointer"
               >
-                <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
-                  <div className="text-5xl mb-4 group-hover:scale-110 transition-transform">📷</div>
-                  <h3 className="text-lg font-semibold text-foreground mb-2">{item.title}</h3>
-                  <span className="text-xs px-3 py-1 bg-primary/20 text-primary rounded-full">{item.category}</span>
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <h3 className="text-lg font-semibold text-white mb-2">{item.title}</h3>
+                  <span className="text-xs px-3 py-1 bg-primary/80 text-white rounded-full">{item.category}</span>
                 </div>
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
               </div>
             ))}
           </div>
