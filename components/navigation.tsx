@@ -18,12 +18,12 @@ export function Navigation() {
   }, [])
 
   const navItems = [
-    { label: "Beranda", href: "#home" },
-    { label: "Tentang", href: "#about" },
-    { label: "Sejarah", href: "#history" },
+    { label: "Beranda", href: "/" },
+    { label: "Tentang", href: "/#about" },
+    { label: "Sejarah", href: "/#history" },
     { label: "Galeri", href: "/gallery" },
     { label: "Cerita Komunitas", href: "/stories" },
-    { label: "Kontak", href: "#contact" },
+    { label: "Kontak", href: "/#contact" },
   ]
 
   return (
