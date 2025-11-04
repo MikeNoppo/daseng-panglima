@@ -12,6 +12,17 @@ export default function GalleryPage() {
     { id: 6, title: "Pemandangan dari Kapal", category: "Dokumentasi", image: "/gallery/dasenBoatView.png" },
     { id: 7, title: "Frances and Sea", category: "Komunitas", image: "/gallery/fancesAndSea.jpg" },
     { id: 8, title: "Pemandangan Laut", category: "Dokumentasi", image: "/gallery/SeaView.jpg" },
+    { id: 9, title: "Ibadah di Daseng", category: "Perayaan", image: "/gallery/daseng ibadah.jpg" },
+    { id: 10, title: "Daseng Panglima Malam Hari", category: "Dokumentasi", image: "/gallery/daseng panglima malam hari.jpg" },
+    { id: 11, title: "Daseng Panglima di Malam", category: "Dokumentasi", image: "/gallery/daseng panglima malam.jpg" },
+    { id: 12, title: "Sunset di Daseng", category: "Dokumentasi", image: "/gallery/daseng sunset.jpg" },
+    { id: 13, title: "Daseng Tampak Luas", category: "Dokumentasi", image: "/gallery/daseng wide view.jpg" },
+    { id: 14, title: "Memancing dari Daseng", category: "Komunitas", image: "/gallery/fishing from daseng.jpg" },
+    { id: 15, title: "Ibadah Malam 2", category: "Perayaan", image: "/gallery/ibadah malam 2.jpg" },
+    { id: 16, title: "Ibadah Malam", category: "Perayaan", image: "/gallery/Ibadah Malam.jpg" },
+    { id: 17, title: "Ibadah", category: "Perayaan", image: "/gallery/Ibadah.jpg" },
+    { id: 18, title: "Membuat Jaring", category: "Komunitas", image: "/gallery/membuat jaring.jpg" },
+    { id: 19, title: "Sunset di Daseng", category: "Dokumentasi", image: "/gallery/sunset in daseng.jpg" },
   ]
 
   return (
