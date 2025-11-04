@@ -23,6 +23,7 @@ export default function GalleryPage() {
     { id: 17, title: "Ibadah", category: "Perayaan", image: "/gallery/Ibadah.jpg" },
     { id: 18, title: "Membuat Jaring", category: "Komunitas", image: "/gallery/membuat jaring.jpg" },
     { id: 19, title: "Sunset di Daseng", category: "Dokumentasi", image: "/gallery/sunset in daseng.jpg" },
+    { id: 20, title: "Sunset di daseng", category: "Dokumentasi", image: "/gallery/sunset from daseng.jpg" },
   ]
 
   return (
