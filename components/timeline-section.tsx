@@ -3,35 +3,43 @@ import Image from "next/image"
 export function TimelineSection() {
   const timelineItems = [
     {
-      year: "2004",
+      year: "2003-2004",
       title: "Awal Mula",
       description:
         "Daseng Panglima didirikan sebagai pusat komunitas nelayan lokal. Struktur ini dirancang dengan mempertimbangkan kebutuhan masyarakat, menjadi tempat berkumpul, berbagi, dan melestarikan tradisi maritim yang telah turun-temurun.",
-      image: "/daseng-panglima-2004-bangunan-asli.jpg",
+      image: "/images/2003-daseng.jpg",
       position: "left",
     },
     {
-      year: "2004-2020",
-      title: "Masa Jaya",
+      year: "2015",
+      title: "Masa Jaya - Pertengahan",
       description:
-        "Selama lebih dari 15 tahun, Daseng Panglima menjadi simbol ketangguhan dan kebersamaan komunitas. Tempat ini menjadi saksi berbagai peristiwa penting dan repository kenangan komunitas.",
-      image: "/komunitas-nelayan-berkumpul-bersama.jpg",
+        "Daseng Panglima terus menjadi pusat aktivitas komunitas nelayan. Tempat ini menjadi saksi berbagai peristiwa penting dan menyimpan kenangan indah komunitas.",
+      image: "/images/Juni-2015-daseng.jpg",
       position: "right",
     },
     {
-      year: "2021-2022",
-      title: "Perubahan dan Kehancuran",
+      year: "2018",
+      title: "Masa Jaya - Konsolidasi Nelayan",
       description:
-        "Pada tahun 2021-2022, Daseng Panglima mengalami perubahan signifikan yang berakhir dengan kehancurannya. Berbagai faktor berkontribusi pada nasib tragis struktur bersejarah ini.",
-      image: "/perubahan-sosial-ekonomi-komunitas.jpg",
+        "Daseng Panglima menjadi tempat berkumpulnya nelayan Sulut untuk konsolidasi dan membahas berbagai persoalan. Tempat ini terus menjadi simbol kebersamaan dan solidaritas komunitas nelayan.",
+      image: "/images/31-Jul-2018-Gelar Konsolidasi, Nelayan Sulut Ungkapkan Berbagai Persoalan.jpg",
       position: "left",
+    },
+    {
+      year: "2020",
+      title: "Akhir Perjalanan",
+      description:
+        "Memasuki tahun 2020, Daseng Panglima mulai mengalami perubahan. Struktur yang telah berdiri selama hampir dua dekade ini mencatat momen-momen akhir sebelum akhirnya tidak lagi berdiri pada tahun 2022.",
+      image: "/images/2020-daseng.jpg",
+      position: "right",
     },
     {
       year: "2024",
       title: "Warisan Digital",
       description:
         "Melalui monumen digital ini, kami berkomitmen untuk melestarikan warisan Daseng Panglima sebagai bagian integral dari identitas budaya lokal. Setiap cerita dan kenangan adalah kontribusi untuk generasi mendatang.",
-      position: "right",
+      position: "left",
     },
   ]
 
